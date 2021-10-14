@@ -1,0 +1,116 @@
+/*********************************************************************
+ LOADS IN A NICE RESET TO ENSURE ALL BROWSERS HAVE THE SAME BASE STYLES
+*********************************************************************/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+/*********************************************************************
+  YOUR MOBILE/BASE STYLES GO HERE
+*********************************************************************/
+/* This is what is called a reset. Different browsers have different default padding and margins. Using the * reserts all depault elements to have zero padding and margin. */
+
+* {
+    box-sizing: border-box;
+  }
+
+body,
+  html {
+    font-size: 16px;
+    font-family: 'Kaisei Decol', serif;
+  }
+
+
+
+body {
+    background-color: lightgray;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+
+img.icon{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+
+  .container.photo {
+    padding: 0;
+    max-width: 800px;
+}
+
+figure {
+    background-color: whitesmoke;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+}
+
+  .flex>div{
+    margin-bottom: 10px;
+}
+
+
+figcaption {
+    margin: 0;
+    font-size: 0.9rem;
+    color: 3333;
+}
+
+  .container2{
+    margin: 10px;
+}
+
+  .container3{ 
+    width: 50%;
+    margin-left: 5px;
+    margin-right: 10px;
+    text-align: center;
+    padding:  20px;
+}
+
+
+
+/*********************************************************************
+  YOUR TABLET/DESKTOP STYLES GO HERE
+*********************************************************************/
+ @media(min-width: 681px) {
+    
+    .flex{
+        display: flex;
+        justify-content: space-between;
+    }
+    .flex>div{
+        flex-basis: auto;
+}
+
+
+
+/*********************************************************************
+  YOUR DESKTOP-ONLY STYLES GO HERE
+*********************************************************************/
+@media(min-width: 780px) {
+
+   img.icon{
+    width: 60%;
+   }
+
+} 
+
+
+
+
+
+
+
+
